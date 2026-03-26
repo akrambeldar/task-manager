@@ -1,10 +1,18 @@
+import os
+
+# Force test DB settings before app imports
+os.environ["DATABASE_URL"] = "sqlite://"
+os.environ["SECRET_KEY"] = "testsecret"
+os.environ["ALGORITHM"] = "HS256"
+os.environ["ACCESS_TOKEN_EXPIRE_MINUTES"] = "30"
+
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
-from backend.app.main import app, get_db
-from backend.app.database import Base
+from app.main import app, get_db
+from app.database import Base
 
 SQLALCHEMY_DATABASE_URL = "sqlite://"
 
