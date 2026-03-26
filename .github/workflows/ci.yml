@@ -18,6 +18,9 @@ jobs:
       run:
         working-directory: backend
 
+    env:
+      PYTHONPATH: ${{ github.workspace }}/backend
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -34,4 +37,4 @@ jobs:
           pip install pytest httpx
 
       - name: Run tests
-        run: pytest
+        run: python -m pytest
