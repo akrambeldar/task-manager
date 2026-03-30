@@ -206,27 +206,6 @@ This starts:
 
 ---
 
-# 💼 Resume / Portfolio Value
-
-This project demonstrates **full-stack engineering capability** from backend APIs to frontend dashboards and DevOps workflows.
-
-It is especially valuable for roles such as:
-
-* Software Engineer
-* Backend Developer
-* Full Stack Developer
-* Platform / DevOps Engineer
-* Data Engineer with product engineering exposure
-
----
-
-# 👨‍💻 Author
-
-**Mohammed Akram Beldar**
-
-Built as part of a **Software Engineering transition roadmap from Data Science → Full Stack → DevOps**.
-
----
 
 # ⭐ Future Enhancements
 
